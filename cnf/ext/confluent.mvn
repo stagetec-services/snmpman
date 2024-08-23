@@ -1,0 +1,14 @@
+io.confluent:kafka-protobuf-serializer:jar:6.1.1
+io.confluent:kafka-protobuf-serializer:jar:sources:6.1.1
+io.confluent:kafka-protobuf-provider:jar:6.1.1
+io.confluent:kafka-protobuf-provider:jar:sources:6.1.1
+io.confluent:kafka-schema-serializer:jar:6.1.1
+io.confluent:kafka-schema-serializer:jar:sources:6.1.1
+io.confluent:kafka-schema-registry-client:jar:6.1.1
+io.confluent:kafka-schema-registry-client:jar:sources:6.1.1
+io.confluent:kafka-streams-protobuf-serde:jar:6.1.1
+io.confluent:kafka-streams-protobuf-serde:jar:sources:6.1.1
+io.confluent:kafka-avro-serializer:jar:6.1.1
+io.confluent:kafka-avro-serializer:jar:sources:6.1.1
+io.confluent:kafka-streams-avro-serde:jar:6.1.1
+io.confluent:kafka-streams-avro-serde:jar:sources:6.1.1

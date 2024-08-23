@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1724418663378
+Build-Jdk: 17.0.11
+Built-By: mbachmann
+Bundle-Description: SNMP agent simulator library
+Bundle-DocURL: http://www.ionos.com/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SNMPMan
+Bundle-SymbolicName: snmpman
+Bundle-Vendor: IONOS SE
+Bundle-Version: 2.2.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.oneandone.snmpman;uses:="com.oneandone.snmpman.confi
+ guration,org.snmp4j.agent,org.snmp4j.agent.mo.snmp,org.snmp4j.security"
+ ;version="2.2.1.SNAPSHOT",com.oneandone.snmpman.configuration;uses:="co
+ m.fasterxml.jackson.annotation,com.oneandone.snmpman.configuration.modi
+ fier,org.snmp4j.smi";version="2.2.1.SNAPSHOT",com.oneandone.snmpman.con
+ figuration.modifier;uses:="com.fasterxml.jackson.annotation,com.google.
+ common.primitives,com.oneandone.snmpman.configuration.type,org.snmp4j.a
+ sn1,org.snmp4j.smi";version="2.2.1.SNAPSHOT",com.oneandone.snmpman.conf
+ iguration.type;uses:="com.google.common.primitives,org.snmp4j.smi";vers
+ ion="2.2.1.SNAPSHOT",com.oneandone.snmpman.exception;version="2.2.1.SNA
+ PSHOT",com.oneandone.snmpman.snmp;uses:="org.snmp4j.agent,org.snmp4j.ag
+ ent.request,org.snmp4j.smi";version="2.2.1.SNAPSHOT"
+Import-Package: com.fasterxml.jackson.annotation;version="[2.16,3)",com.
+ fasterxml.jackson.core;version="[2.16,3)",com.fasterxml.jackson.databin
+ d;version="[2.16,3)",com.fasterxml.jackson.dataformat.yaml;version="[2.
+ 16,3)",com.google.common.base;version="[33.0,34)",com.google.common.pri
+ mitives;version="[33.0,34)",com.oneandone.snmpman.configuration,com.one
+ andone.snmpman.configuration.modifier,com.oneandone.snmpman.configurati
+ on.type,com.oneandone.snmpman.exception,com.oneandone.snmpman.snmp,org.
+ slf4j;version="[2.0,3)",org.snmp4j,org.snmp4j.agent,org.snmp4j.agent.mo
+ ,org.snmp4j.agent.mo.snmp,org.snmp4j.agent.request,org.snmp4j.asn1,org.
+ snmp4j.mp,org.snmp4j.security,org.snmp4j.smi,org.snmp4j.transport,org.s
+ nmp4j.util
+Require-Capability: osgi.ee;filter:=
+Tool: Bnd-3.0.0.201509101326

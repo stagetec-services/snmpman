@@ -1,0 +1,2004 @@
+{
+  "libraries": [
+    {
+      "biz.aQute.bnd:biz.aQute.bndlib:5.3.0": [
+        {
+          "name": "(Apache-2.0 OR EPL-2.0)",
+          "url": "https://opensource.org/licenses/Apache-2.0,https://opensource.org/licenses/EPL-2.0"
+        }
+      ]
+    },
+    {
+      "biz.aQute.bnd:aQute.libg:4.3.1": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        },
+        {
+          "name": "EPL-2.0",
+          "url": "https://opensource.org/licenses/EPL-2.0"
+        }
+      ]
+    },
+    {
+      "biz.aQute.bnd:biz.aQute.launchpad:4.3.1": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        },
+        {
+          "name": "EPL-2.0",
+          "url": "https://opensource.org/licenses/EPL-2.0"
+        }
+      ]
+    },
+    {
+      "biz.aQute.bnd:biz.aQute.bnd.runtime.gogo:4.3.1": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        },
+        {
+          "name": "EPL-2.0",
+          "url": "https://opensource.org/licenses/EPL-2.0"
+        }
+      ]
+    },
+    {
+      "biz.aQute.bnd:biz.aQute.bnd.runtime.snapshot:4.3.1": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        },
+        {
+          "name": "EPL-2.0",
+          "url": "https://opensource.org/licenses/EPL-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:osgi.annotation:7.0.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.dto:1.1.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.framework:1.9.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.jmx:1.1.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.namespace.contract:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.namespace.extender:1.0.1": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.namespace.implementation:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.namespace.service:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.namespace.unresolvable:1.0.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.resource:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.application:1.1.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.jdbc:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.async:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.blueprint:1.0.2": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.cdi:1.0.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.clusterinfo:1.0.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.cm:1.6.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.component:1.4.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.component.annotations:1.4.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.condpermadmin:1.1.1": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.configurator:1.0.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.coordinator:1.0.2": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.event:1.4.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.http:1.2.1": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.http.whiteboard:1.1.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.jdbc:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.log:1.4.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.metatype:1.4.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.metatype.annotations:1.4.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.packageadmin:1.2.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.remoteserviceadmin:1.1.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.repository:1.1.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.resolver:1.1.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.rest:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.serviceloader:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.url:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.service.useradmin:1.1.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.util.converter:1.0.1": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.slf4j:slf4j-api:1.7.30": [
+        {
+          "name": "MIT License",
+          "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+      ]
+    },
+    {
+      "org.mockito:mockito-all:1.10.19": [
+        {
+          "name": "The MIT License",
+          "url": "http://github.com/mockito/mockito/blob/master/LICENSE"
+        }
+      ]
+    },
+    {
+      "org.easymock:easymock:4.1": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.assertj:assertj-core:3.14.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.osgi:osgi.enroute.junit.wrapper:4.12.0": [
+        {
+          "name": "http://opensource.org/licenses/EPL-1.0",
+          "url": "http://opensource.org/licenses/EPL-1.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:osgi.enroute.hamcrest.wrapper:1.3.0": [
+        {
+          "name": "http://opensource.org/licenses/BSD-2-Clause",
+          "url": "http://opensource.org/licenses/BSD-2-Clause"
+        }
+      ]
+    },
+    {
+      "org.json:json:20211205": [
+        {
+          "name": "The JSON License",
+          "url": "http://json.org/license.html"
+        }
+      ]
+    },
+    {
+      "org.json:json:20201115": [
+        {
+          "name": "The JSON License",
+          "url": "http://json.org/license.html"
+        }
+      ]
+    },
+    {
+      "com.fasterxml.jackson.core:jackson-core:2.12.1": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.fasterxml.jackson.core:jackson-databind:2.12.1": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.fasterxml.jackson.core:jackson-annotations:2.12.1": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.jmdns:jmdns:3.5.6": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.cometd.java:cometd-java-api-common:5.0.5": [
+        {
+          "name": "Apache License Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.cometd.java:cometd-java-api-client:5.0.5": [
+        {
+          "name": "Apache License Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.cometd.java:cometd-java-common:5.0.5": [
+        {
+          "name": "Apache License Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.cometd.java:cometd-java-client-common:5.0.5": [
+        {
+          "name": "Apache License Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.cometd.java:cometd-java-client-http-common:5.0.5": [
+        {
+          "name": "Apache License Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.cometd.java:cometd-java-client-http-jetty:5.0.5": [
+        {
+          "name": "Apache License Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.cometd.java:cometd-java-client-websocket-jetty:5.0.5": [
+        {
+          "name": "Apache License Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.apache.kafka:kafka-clients:2.7.0": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.kafka:kafka-streams:2.7.0": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.rocksdb:rocksdbjni:5.18.4": [
+        {
+          "name": "Apache License 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        {
+          "name": "GNU General Public License, version 2",
+          "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+        }
+      ]
+    },
+    {
+      "com.google.protobuf:protobuf-java-util:3.21.7": [
+        {
+          "name": "BSD-3-Clause",
+          "url": "https://opensource.org/licenses/BSD-3-Clause"
+        }
+      ]
+    },
+    {
+      "com.google.protobuf:protobuf-java:3.21.7": [
+        {
+          "name": "BSD-3-Clause",
+          "url": "https://opensource.org/licenses/BSD-3-Clause"
+        }
+      ]
+    },
+    {
+      "com.squareup.wire:wire-schema:3.2.2": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.squareup.wire:wire-runtime:3.2.2": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty:jetty-server:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty:jetty-servlet:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty:jetty-security:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty:jetty-client:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty:jetty-util:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty.websocket:websocket-common:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty.websocket:websocket-server:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty.websocket:websocket-servlet:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty.websocket:websocket-api:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty:jetty-util-ajax:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty:jetty-http:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.jetty:jetty-io:9.4.38.v20210224": [
+        {
+          "name": "Apache Software License - Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "name": "Eclipse Public License - Version 1.0",
+          "url": "https://www.eclipse.org/org/documents/epl-v10.php"
+        }
+      ]
+    },
+    {
+      "javax.servlet:javax.servlet-api:3.1.0": [
+        {
+          "name": "CDDL + GPLv2 with classpath exception",
+          "url": "https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"
+        }
+      ]
+    },
+    {
+      "org.apache.avro:avro:1.9.2": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.guava:guava:30.1.1-jre": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.code.gson:gson:2.8.9": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5": [
+        {
+          "name": "Eclipse Public License - Version 2.0",
+          "url": "https://www.eclipse.org/legal/epl-2.0"
+        }
+      ]
+    },
+    {
+      "org.java-websocket:Java-WebSocket:1.5.3": [
+        {
+          "name": "MIT License",
+          "url": "https://github.com/TooTallNate/Java-WebSocket/blob/master/LICENSE"
+        }
+      ]
+    },
+    {
+      "com.squareup.okhttp3:okhttp:4.9.0": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.squareup.okhttp3:logging-interceptor:4.2.2": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.squareup.okio:okio:2.9.0": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.threeten:threetenbp:1.4.0": [
+        {
+          "name": "BSD 3-clause",
+          "url": "https://raw.githubusercontent.com/ThreeTen/threetenbp/master/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "org.jetbrains.kotlin:kotlin-osgi-bundle:1.7.10": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "io.gsonfire:gson-fire:1.8.5": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "io.swagger:swagger-annotations:1.6.6": [
+        {
+          "name": "Apache License 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+      ]
+    },
+    {
+      "com.google.code.findbugs:jsr305:3.0.2": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "jakarta.annotation:jakarta.annotation-api:1.3.5": [
+        {
+          "name": "EPL 2.0",
+          "url": "http://www.eclipse.org/legal/epl-2.0"
+        },
+        {
+          "name": "GPL2 w/ CPE",
+          "url": "https://www.gnu.org/software/classpath/license.html"
+        }
+      ]
+    },
+    {
+      "org.openapitools:jackson-databind-nullable:0.2.3": [
+        {
+          "name": "Apache License 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+      ]
+    },
+    {
+      "io.reactivex.rxjava3:rxjava:3.0.0": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.reactivestreams:reactive-streams:1.0.4": [
+        {
+          "name": "MIT-0",
+          "url": "https://spdx.org/licenses/MIT-0.html"
+        }
+      ]
+    },
+    {
+      "com.google.android:annotations:4.1.1.4": [
+        {
+          "name": "Apache 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "com.google.api.grpc:proto-google-common-protos:2.9.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.code.findbugs:jsr305:3.0.2": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.code.gson:gson:2.8.9": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.errorprone:error_prone_annotations:2.14.0": [
+        {
+          "name": "Apache 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.guava:failureaccess:1.0.1": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.guava:guava:31.1-android": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.j2objc:j2objc-annotations:1.3": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "io.grpc:grpc-api:1.50.0": [
+        {
+          "name": "Apache 2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        }
+      ]
+    },
+    {
+      "io.grpc:grpc-context:1.50.0": [
+        {
+          "name": "Apache 2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        }
+      ]
+    },
+    {
+      "io.grpc:grpc-core:1.50.0": [
+        {
+          "name": "Apache 2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        }
+      ]
+    },
+    {
+      "io.grpc:grpc-netty:1.50.0": [
+        {
+          "name": "Apache 2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        }
+      ]
+    },
+    {
+      "io.grpc:grpc-protobuf-lite:1.50.0": [
+        {
+          "name": "Apache 2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        }
+      ]
+    },
+    {
+      "io.grpc:grpc-protobuf:1.50.0": [
+        {
+          "name": "Apache 2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        }
+      ]
+    },
+    {
+      "io.grpc:grpc-stub:1.50.0": [
+        {
+          "name": "Apache 2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        }
+      ]
+    },
+    {
+      "io.lighty.modules.gnmi:lighty-gnmi-proto:17.1.0": [
+        {
+          "name": "Eclipse Public License 1.0",
+          "url": "https://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-buffer:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-codec-http2:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-codec-http:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-codec-socks:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-codec:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-common:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-handler-proxy:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-handler:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-resolver:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-transport-native-unix-common:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.netty:netty-transport:4.1.79.Final": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "io.perfmark:perfmark-api:0.25.0": [
+        {
+          "name": "Apache 2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        }
+      ]
+    },
+    {
+      "jakarta.annotation:jakarta.annotation-api:1.3.5": [
+        {
+          "name": "EPL 2.0",
+          "url": "http://www.eclipse.org/legal/epl-2.0"
+        },
+        {
+          "name": "GPL2 w/ CPE",
+          "url": "https://www.gnu.org/software/classpath/license.html"
+        }
+      ]
+    },
+    {
+      "org.apache.logging.log4j:log4j-api:2.19.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.logging.log4j:log4j-core:2.19.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.logging.log4j:log4j-slf4j2-impl:2.19.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.checkerframework:checker-qual:3.12.0": [
+        {
+          "name": "The MIT License",
+          "url": "http://opensource.org/licenses/MIT"
+        }
+      ]
+    },
+    {
+      "org.codehaus.mojo:animal-sniffer-annotations:1.21": [
+        {
+          "name": "MIT license",
+          "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+      ]
+    },
+    {
+      "org.slf4j:slf4j-api:2.0.0": [
+        {
+          "name": "MIT License",
+          "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+      ]
+    },
+    {
+      "com.github.spotbugs:spotbugs-annotations:4.5.3": [
+        {
+          "name": "GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1",
+          "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.framework:7.0.1": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.framework.security:2.8.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.configadmin:1.9.22": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.configurator:1.0.14": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.coordinator:1.0.2": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.eventadmin:1.6.2": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.fileinstall:3.6.4": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.inventory:1.0.6": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.log:1.2.2": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.log.extension:1.0.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.metatype:1.2.4": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.scr:2.1.26": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.gogo.command:1.1.2": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.gogo.runtime:1.1.4": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.gogo.shell:1.1.4": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.gogo.jline:1.1.8": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.shell.remote:1.2.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.jline:jline:3.13.3": [
+        {
+          "name": "The BSD License",
+          "url": "https://opensource.org/licenses/BSD-3-Clause"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.threaddump:1.0.0": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.converter:1.0.12": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.webconsole.plugins.ds:2.1.0": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.webconsole.plugins.memoryusage:1.0.10": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.webconsole.plugins.scriptconsole:1.0.2": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.webconsole.plugins.useradmin:1.0.2": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.webconsole.plugins.event:1.1.8": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.webconsole.plugins.packageadmin:1.0.4": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.webconsole:4.3.16": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-io:1.4_3": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "commons-fileupload:commons-fileupload:1.4": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.knopflerfish.bundle.useradmin:4.1.1": [
+        {
+          "name": "http://www.knopflerfish.org/license.html",
+          "url": "http://www.knopflerfish.org/license.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.concierge:org.eclipse.concierge.service.clusterinfo:1.0.0": [
+        {
+          "name": "Eclipse Public License 1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.apache.aries.async:org.apache.aries.async:1.0.1": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.h2database:h2:1.4.200": [
+        {
+          "name": "MPL 2.0 or EPL 1.0",
+          "url": "https://h2database.com/html/license.html"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.util.function:1.1.0": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.util.measurement:1.0.2": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.util.position:1.0.1": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.util.promise:1.1.1": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.util.pushstream:1.0.1": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.util.tracker:1.5.2": [
+        {
+          "name": "Apache-2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "org.osgi:org.osgi.util.xml:1.0.1": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://opensource.org/licenses/apache2.0.php"
+        }
+      ]
+    },
+    {
+      "org.eclipse.platform:org.eclipse.core.jobs:3.10.600": [
+        {
+          "name": "Eclipse Public License - v 2.0",
+          "url": "https://www.eclipse.org/legal/epl-2.0/"
+        }
+      ]
+    },
+    {
+      "org.eclipse.platform:org.eclipse.equinox.common:3.10.600": [
+        {
+          "name": "Eclipse Public License - v 2.0",
+          "url": "https://www.eclipse.org/legal/epl-2.0/"
+        }
+      ]
+    },
+    {
+      "org.eclipse.platform:org.eclipse.equinox.concurrent:1.1.400": [
+        {
+          "name": "Eclipse Public License - v 2.0",
+          "url": "https://www.eclipse.org/legal/epl-2.0/"
+        }
+      ]
+    },
+    {
+      "org.eclipse.platform:org.eclipse.equinox.supplement:1.9.100": [
+        {
+          "name": "Eclipse Public License - v 2.0",
+          "url": "https://www.eclipse.org/legal/epl-2.0/"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.identity:3.9.300": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf:3.9.4": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.sharedobject:2.6.1": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.discovery:5.0.301": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.remoteservice.asyncproxy:2.1.2": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.remoteservice:8.13.2": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.console:1.3.1": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.osgi.services.remoteserviceadmin.console:1.2.1": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.osgi.services.remoteserviceadmin:1.6.200": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.osgi.services.remoteserviceadmin.proxy:1.0.101": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.osgi.services.remoteserviceadmin:4.6.1102": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.osgi.services.distribution:2.1.400": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.provider:4.8.200": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.provider.remoteservice:4.4.101": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:ch.ethz.iks.r_osgi.remote:1.2.201": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.provider.r_osgi:3.6.201": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.objectweb.asm:5.0.1.v201404251740": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.apache.commons.codec:1.9.0.v20170208-1614": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.apache.commons.logging:1.1.1.v201101211721": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.apache.log4j:1.2.15.v201012070815": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.apache.httpcomponents.httpclient:4.5.2.v20170210-0925": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.apache.httpcomponents.httpcore:4.4.6.v20170210-0925": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.remoteservice.rest:2.7.201": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.remoteservice.eventadmin:1.3.1": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.remoteservice.servlet:1.0.101": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.server:2.1.201": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.server.generic:8.0.101": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.provider.zookeeper:1.2.201": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.apache.hadoop.zookeeper:3.3.3.v201105210832": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.provider.jmdns:4.3.301": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:org.eclipse.ecf.provider.jslp:3.2.202": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.eclipse.ecf:ch.ethz.iks.slp:1.3.1": [
+        {
+          "name": "Eclipse Public License v1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+      ]
+    },
+    {
+      "org.glassfish:javax.json:1.1.4": [
+        {
+          "name": "Dual license consisting of the CDDL v1.1 and GPL v2",
+          "url": "https://oss.oracle.com/licenses/CDDL+GPL-1.1"
+        }
+      ]
+    },
+    {
+      "biz.aQute:osgi.enroute.webconsole.xray.provider:2.2.0": [
+        {
+          "name": "http://opensource.org/licenses/apache2.0.php",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ]
+    },
+    {
+      "ch.qos.logback:logback-core:1.2.3": [
+        {
+          "name": "Eclipse Public License - v 1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        },
+        {
+          "name": "GNU Lesser General Public License",
+          "url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+        }
+      ]
+    },
+    {
+      "ch.qos.logback:logback-classic:1.2.3": [
+        {
+          "name": "Eclipse Public License - v 1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        },
+        {
+          "name": "GNU Lesser General Public License",
+          "url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+        }
+      ]
+    },
+    {
+      "ch.qos.logback:logback-core:1.3.0-alpha5": [
+        {
+          "name": "Eclipse Public License - v 1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        },
+        {
+          "name": "GNU Lesser General Public License",
+          "url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+        }
+      ]
+    },
+    {
+      "ch.qos.logback:logback-classic:1.3.0-alpha5": [
+        {
+          "name": "Eclipse Public License - v 1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        },
+        {
+          "name": "GNU Lesser General Public License",
+          "url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+        }
+      ]
+    },
+    {
+      "com.github.luben:zstd-jni:1.4.5-6": [
+        {
+          "name": "BSD 2-Clause License",
+          "url": "https://opensource.org/licenses/BSD-2-Clause"
+        }
+      ]
+    },
+    {
+      "org.lz4:lz4-java:1.7.1": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.eclipsesource.jaxrs:jersey-all:2.22.2": [
+        {
+          "name": "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
+          "url": "https://jersey.java.net/license.html#cddl"
+        },
+        {
+          "name": "GNU GENERAL PUBLIC LICENSE (GPL Version 2, June 1991)",
+          "url": "https://jersey.java.net/license.html#/gpl"
+        }
+      ]
+    },
+    {
+      "org.apache.servicemix.specs:org.apache.servicemix.specs.activation-api-1.1:2.9.0": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.servicemix.specs:org.apache.servicemix.specs.jaxb-api-2.3:2.3_3": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.geronimo.specs:geronimo-activation_1.1_spec:1.1": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.servicemix.specs:org.apache.servicemix.specs.stax-api-1.0:2.9.0": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.jetbrains.kotlin:kotlin-osgi-bundle:1.3.71": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.guava:guava:30.0-jre": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.google.guava:failureaccess:1.0.1": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.http.servlet-api:1.1.2": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.felix:org.apache.felix.http.jetty:4.1.6": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.apache.commons:commons-compress:1.19": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "org.jetbrains.kotlin:kotlin-osgi-bundle:1.4.10": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    },
+    {
+      "com.squareup.okio:okio:2.8.0": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ]
+    }
+  ],
+  "summary": [
+    "(Apache-2.0 OR EPL-2.0)",
+    "Apache 2.0",
+    "Apache License 2.0",
+    "Apache License Version 2.0",
+    "Apache License, Version 2.0",
+    "Apache Software License - Version 2.0",
+    "Apache-2.0",
+    "BSD 2-Clause License",
+    "BSD 3-clause",
+    "BSD-3-Clause",
+    "CDDL + GPLv2 with classpath exception",
+    "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)",
+    "Dual license consisting of the CDDL v1.1 and GPL v2",
+    "EPL 2.0",
+    "EPL-2.0",
+    "Eclipse Public License - Version 1.0",
+    "Eclipse Public License - Version 2.0",
+    "Eclipse Public License - v 1.0",
+    "Eclipse Public License - v 2.0",
+    "Eclipse Public License 1.0",
+    "Eclipse Public License v1.0",
+    "GNU GENERAL PUBLIC LICENSE (GPL Version 2, June 1991)",
+    "GNU General Public License, version 2",
+    "GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1",
+    "GNU Lesser General Public License",
+    "GPL2 w/ CPE",
+    "MIT License",
+    "MIT license",
+    "MIT-0",
+    "MPL 2.0 or EPL 1.0",
+    "The Apache Software License, Version 2.0",
+    "The BSD License",
+    "The JSON License",
+    "The MIT License",
+    "http://opensource.org/licenses/BSD-2-Clause",
+    "http://opensource.org/licenses/EPL-1.0",
+    "http://opensource.org/licenses/apache2.0.php",
+    "http://www.knopflerfish.org/license.html"
+  ]
+}

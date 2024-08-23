@@ -1,0 +1,44 @@
+plugins {
+  id 'java'
+  id "io.freefair.lombok" version "8.10"
+}
+
+tasks.named('wrapper') {
+  jarFile = rootProject.file('.gradle-wrapper/gradle-wrapper.jar')
+}
+
+repositories {
+  mavenCentral()
+  maven {
+    url "https://plugins.gradle.org/m2/"
+  }
+}
+
+subprojects {
+
+    if (it.name != 'cnf') {
+      apply plugin: 'java'
+      tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+      }
+    }
+
+    apply plugin: "io.freefair.lombok"
+
+    repositories {
+      mavenCentral()
+      maven {
+        url "https://plugins.gradle.org/m2/"
+      }
+    }
+    
+    
+	test {
+		jvmArgs '--add-opens', 'java.base/java.lang=ALL-UNNAMED', '--add-opens', 'java.base/java.util=ALL-UNNAMED', '--add-opens', 'java.base/java.lang.reflect=ALL-UNNAMED'
+	}
+
+}
+
+def date() {
+    new Date().format('yyyy-MM-dd-HHmmss')
+}
