@@ -18,7 +18,8 @@ public class DeviceTest {
         assertTrue(device.getModifiers().isEmpty());
     }
 
-    @Test(expectedExceptions = { UnsupportedOperationException.class })
+    @SuppressWarnings("rawtypes")
+	@Test(expectedExceptions = { UnsupportedOperationException.class })
     public void testImmutability() {
         final Device device = new Device("Test", new Modifier[0], null);
 

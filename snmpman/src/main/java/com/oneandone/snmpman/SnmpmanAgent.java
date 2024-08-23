@@ -1,6 +1,51 @@
 package com.oneandone.snmpman;
 
-import com.google.common.primitives.UnsignedLong;
+import java.io.File;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Field;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.stream.Collectors;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.snmp4j.TransportMapping;
+import org.snmp4j.agent.BaseAgent;
+import org.snmp4j.agent.CommandProcessor;
+import org.snmp4j.agent.DefaultMOContextScope;
+import org.snmp4j.agent.DefaultMOQuery;
+import org.snmp4j.agent.DefaultMOServer;
+import org.snmp4j.agent.DuplicateRegistrationException;
+import org.snmp4j.agent.MOContextScope;
+import org.snmp4j.agent.MOScope;
+import org.snmp4j.agent.ManagedObject;
+import org.snmp4j.agent.io.ImportMode;
+import org.snmp4j.agent.mo.ext.StaticMOGroup;
+import org.snmp4j.agent.mo.snmp.RowStatus;
+import org.snmp4j.agent.mo.snmp.SnmpCommunityMIB;
+import org.snmp4j.agent.mo.snmp.SnmpNotificationMIB;
+import org.snmp4j.agent.mo.snmp.SnmpTargetMIB;
+import org.snmp4j.agent.mo.snmp.StorageType;
+import org.snmp4j.agent.mo.snmp.VacmMIB;
+import org.snmp4j.agent.security.MutableVACM;
+import org.snmp4j.mp.MPv3;
+import org.snmp4j.security.SecurityLevel;
+import org.snmp4j.security.SecurityModel;
+import org.snmp4j.security.USM;
+import org.snmp4j.smi.Integer32;
+import org.snmp4j.smi.OID;
+import org.snmp4j.smi.OctetString;
+import org.snmp4j.smi.Variable;
+import org.snmp4j.smi.VariableBinding;
+import org.snmp4j.transport.TransportMappings;
+import org.snmp4j.util.ThreadPool;
+
 import com.oneandone.snmpman.configuration.AgentConfiguration;
 import com.oneandone.snmpman.configuration.Device;
 import com.oneandone.snmpman.configuration.Walks;
@@ -9,29 +54,6 @@ import com.oneandone.snmpman.configuration.modifier.ModifiedVariable;
 import com.oneandone.snmpman.configuration.modifier.Modifier;
 import com.oneandone.snmpman.configuration.modifier.VariableModifier;
 import com.oneandone.snmpman.snmp.MOGroup;
-import lombok.extern.slf4j.Slf4j;
-import org.snmp4j.TransportMapping;
-import org.snmp4j.agent.*;
-import org.snmp4j.agent.io.ImportMode;
-import org.snmp4j.agent.mo.ext.StaticMOGroup;
-import org.snmp4j.agent.mo.snmp.*;
-import org.snmp4j.agent.security.MutableVACM;
-import org.snmp4j.mp.MPv3;
-import org.snmp4j.security.SecurityLevel;
-import org.snmp4j.security.SecurityModel;
-import org.snmp4j.security.USM;
-import org.snmp4j.smi.*;
-import org.snmp4j.transport.TransportMappings;
-import org.snmp4j.util.ThreadPool;
-
-import java.io.*;
-import java.lang.reflect.Field;
-import java.net.URLEncoder;
-import java.nio.charset.Charset;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 /**
  * This is the core class of the {@code Snmpman}. The agent simulates the SNMP-capable devices.
@@ -39,13 +61,14 @@ import java.util.stream.Collectors;
  * This class can be instantiated via the constructor {@link #SnmpmanAgent(com.oneandone.snmpman.configuration.AgentConfiguration)}, which
  * requires an instance of the {@link com.oneandone.snmpman.configuration.AgentConfiguration}.
  */
-@Slf4j
+@SuppressWarnings("deprecation")
 public class SnmpmanAgent extends BaseAgent {
+	private static final Logger log = LoggerFactory.getLogger(SnmpmanAgent.class);
 
     /**
      * The default charset for files being read.
      */
-    private static final Charset DEFAULT_CHARSET = Charset.forName("UTF-8");
+//    private static final Charset DEFAULT_CHARSET = Charset.forName("UTF-8");
 
     /**
      * The configuration of this agent.
@@ -179,7 +202,7 @@ public class SnmpmanAgent extends BaseAgent {
     }
 
     @Override
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     protected void initTransportMappings() {
         log.trace("starting to initialize transport mappings for agent \"{}\"", configuration.getName());
         transportMappings = new TransportMapping[1];
@@ -361,7 +384,7 @@ public class SnmpmanAgent extends BaseAgent {
      * @param bindings the bindings as the base
      * @return the variable bindings for the specified device configuration
      */
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     private SortedMap<OID, Variable> getVariableBindings(final Device device, final Map<OID, Variable> bindings, final OctetString context) {
         log.trace("get variable bindings for agent \"{}\"", configuration.getName());
         final SortedMap<OID, Variable> result = new TreeMap<>();

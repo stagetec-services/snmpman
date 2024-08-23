@@ -1,13 +1,17 @@
 package com.oneandone.snmpman.configuration.modifier;
 
-import com.oneandone.snmpman.configuration.type.ModifierProperties;
-import lombok.Getter;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+import java.util.TreeMap;
+
 import org.snmp4j.smi.Counter32;
 import org.snmp4j.smi.OID;
 import org.snmp4j.smi.OctetString;
 import org.snmp4j.smi.Variable;
 
-import java.util.*;
+import com.oneandone.snmpman.configuration.type.ModifierProperties;
 
 /**
  * This modifier implementation modifies {@link Counter32} variables depending on their community context.
@@ -16,7 +20,7 @@ public class CommunityIndexCounter32Modifier implements CommunityContextModifier
     /**
      * Mapping of SNMP community context to SNMP OID and result.
      */
-    @Getter private Map<Long, Long> communityContextMapping = new HashMap<>();
+    private Map<Long, Long> communityContextMapping = new HashMap<>();
 
     @Override
     public void init(final ModifierProperties properties) {
@@ -59,6 +63,11 @@ public class CommunityIndexCounter32Modifier implements CommunityContextModifier
 
         }
         return new TreeMap<>();
+    }
+    
+    @Override
+    public Map<Long, Long> getCommunityContextMapping() {
+    	return communityContextMapping;
     }
 }
 

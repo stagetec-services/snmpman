@@ -10,14 +10,15 @@ import static org.testng.Assert.*;
 
 public class ModifierTest {
 
-    @Test
+    @SuppressWarnings("rawtypes")
+	@Test
     public void testIsApplicable() {
         final Modifier modifier = new Modifier(".1.3.6.*", "com.oneandone.snmpman.configuration.modifier.Counter32Modifier", new ModifierProperties());
         assertTrue(modifier.isApplicable(new OID(".1.3.6.1")));
     }
 
     @Test
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public void testModify() {
         final ModifierProperties modifierProperties = new ModifierProperties();
         modifierProperties.put("minimum", 0L);

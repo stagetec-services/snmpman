@@ -1,6 +1,11 @@
 package com.oneandone.snmpman.snmp;
 
-import lombok.extern.slf4j.Slf4j;
+import java.util.Iterator;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.snmp4j.agent.DefaultMOScope;
 import org.snmp4j.agent.MOScope;
 import org.snmp4j.agent.ManagedObject;
@@ -10,12 +15,8 @@ import org.snmp4j.smi.Null;
 import org.snmp4j.smi.OID;
 import org.snmp4j.smi.Variable;
 
-import java.util.Iterator;
-import java.util.SortedMap;
-import java.util.TreeMap;
-
-@Slf4j
 public class MOGroup implements ManagedObject {
+	private static final Logger log = LoggerFactory.getLogger(MOGroup.class);
 
     /**
      * Sorted map of the variable bindings for this group.

@@ -17,7 +17,8 @@ public class ModifiedVariableTest {
     private Variable otherVariable;
     private ModifiedVariable modifiedVariable;
     
-    @BeforeMethod
+    @SuppressWarnings("rawtypes")
+	@BeforeMethod
     public void setUp() {
         variable = new Integer32(0);
         otherVariable = new Integer32(1);

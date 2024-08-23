@@ -1,23 +1,25 @@
 package com.oneandone.snmpman.configuration.modifier;
 
-import lombok.extern.slf4j.Slf4j;
-import org.snmp4j.asn1.BERInputStream;
-import org.snmp4j.smi.OID;
-import org.snmp4j.smi.Variable;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Collections;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.snmp4j.asn1.BERInputStream;
+import org.snmp4j.smi.OID;
+import org.snmp4j.smi.Variable;
+
 /**
  * A modified variable will change it's value on every value call.
  */
-@Slf4j
+@SuppressWarnings("rawtypes")
 public class ModifiedVariable implements Variable, Cloneable {
+	private static final Logger log = LoggerFactory.getLogger(ModifiedVariable.class);
 
     /** The list of modifiers that modify the {@link #variable}. */
-    private final List<VariableModifier> modifiers;
+	private final List<VariableModifier> modifiers;
 
     /** The variable. */
     private Variable variable;
@@ -40,7 +42,7 @@ public class ModifiedVariable implements Variable, Cloneable {
         return this.variable.compareTo(variable);
     }
 
-    @SuppressWarnings({"CloneDoesntCallSuperClone", "unchecked"})
+    @SuppressWarnings({ "unchecked" })
     @Override
     public Object clone() {
         log.trace("variable {} will be cloned", variable);

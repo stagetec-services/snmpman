@@ -1,27 +1,29 @@
 package com.oneandone.snmpman.configuration.modifier;
 
-import com.oneandone.snmpman.configuration.type.ModifierProperties;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
-import org.snmp4j.smi.Integer32;
-
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.snmp4j.smi.Integer32;
+
+import com.oneandone.snmpman.configuration.type.ModifierProperties;
+
 /** This modifier instance modifies {@link Integer32} variables. */
-@Slf4j
 public class Integer32Modifier implements VariableModifier<Integer32> {
+	
+	private static final Logger log = LoggerFactory.getLogger(Integer32Modifier.class);
 
     /** The minimum allowed number for the resulting modified variable. */
-    @Getter private Integer minimum;
+    private Integer minimum;
 
     /** The maximum allowed number for the resulting modified variable. */
-    @Getter private Integer maximum;
+    private Integer maximum;
 
     /** The minimal step by which a variable will be incremented. */
-    @Getter private Integer minimumStep;
+    private Integer minimumStep;
 
     /** The maximal step by which a variable will be incremented. */
-    @Getter private Integer maximumStep;
+    private Integer maximumStep;
 
     @Override
     public void init(final ModifierProperties properties) {
@@ -74,4 +76,20 @@ public class Integer32Modifier implements VariableModifier<Integer32> {
         log.trace("Counter32 variable {} will be tuned to {}", variable.getValue(), newValue);
         return new Integer32(newValue);
     }
+
+	public Integer getMinimum() {
+		return minimum;
+	}
+
+	public Integer getMaximum() {
+		return maximum;
+	}
+
+	public Integer getMinimumStep() {
+		return minimumStep;
+	}
+
+	public Integer getMaximumStep() {
+		return maximumStep;
+	}
 }

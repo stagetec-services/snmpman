@@ -1,28 +1,30 @@
 package com.oneandone.snmpman.configuration;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import com.oneandone.snmpman.Snmpman;
-import com.oneandone.snmpman.SnmpmanAgent;
-import com.oneandone.snmpman.configuration.modifier.Modifier;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
-import lombok.extern.slf4j.Slf4j;
-import org.snmp4j.smi.Address;
-import org.snmp4j.smi.GenericAddress;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.snmp4j.smi.Address;
+import org.snmp4j.smi.GenericAddress;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.oneandone.snmpman.Snmpman;
+import com.oneandone.snmpman.SnmpmanAgent;
+import com.oneandone.snmpman.configuration.modifier.Modifier;
+
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 /** Representation of the configuration for a {@link SnmpmanAgent}. */
-@Slf4j
 @ToString(exclude = "community") @EqualsAndHashCode
 public class AgentConfiguration {
+	private static final Logger log = LoggerFactory.getLogger(AgentConfiguration.class);
 
     /** The device factory. */
     private static final DeviceFactory DEVICE_FACTORY = new DeviceFactory();
@@ -34,14 +36,14 @@ public class AgentConfiguration {
      *
      * @return the name of the agent
      */
-    @Getter private final String name;
+    private final String name;
 
     /**
      * Returns the address of the agent.
      *
      * @return the address of the agent
      */
-    @Getter private final Address address; // e.g. 127.0.0.1/8080
+    private final Address address; // e.g. 127.0.0.1/8080
 
     /** The device configuration file path. */
     private final File deviceConfiguration;
@@ -53,14 +55,14 @@ public class AgentConfiguration {
      *
      * @return the device representation for the agent
      */
-    @Getter(lazy=true) private final Device device = initializeDevice(); // e.g. cisco
+    private final Device device = initializeDevice(); // e.g. cisco
 
     /**
      * Returns the base walk file (e.g. dump of SNMP walks) for the agent.
      *
      * @return the base walk file for the agent
      */
-    @Getter private final File walk; // real walk: /opt/snmpman/...
+    private final File walk; // real walk: /opt/snmpman/...
 
     /**
      * Returns the community for the agent.
@@ -69,7 +71,7 @@ public class AgentConfiguration {
      *
      * @return the community for the agent
      */
-    @Getter private final String community; // e.g. 'public'
+    private final String community; // e.g. 'public'
 
     /**
      * The device factory creates all {@link Device} representations.
@@ -152,6 +154,26 @@ public class AgentConfiguration {
     private Device initializeDevice() {
         return DEVICE_FACTORY.getDevice(deviceConfiguration);
     }
+
+	public String getName() {
+		return name;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public Device getDevice() {
+		return device;
+	}
+
+	public String getCommunity() {
+		return community;
+	}
+
+	public File getWalk() {
+		return walk;
+	}
 
 
 }

@@ -7,8 +7,9 @@ import java.util.Properties;
 
 /** The modifier properties as used in {@link com.oneandone.snmpman.configuration.Device} for initialization. */
 public class ModifierProperties extends Properties {
+	private static final long serialVersionUID = 1L;
 
-    /**
+	/**
      * Returns the integer value for the specified property {@code key}.
      *  
      * @param key the property key

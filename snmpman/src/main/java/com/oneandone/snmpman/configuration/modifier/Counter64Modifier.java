@@ -1,26 +1,26 @@
 package com.oneandone.snmpman.configuration.modifier;
 
-import com.google.common.primitives.UnsignedLong;
-import com.oneandone.snmpman.configuration.type.ModifierProperties;
-import lombok.Getter;
+import java.util.Optional;
+
 import org.snmp4j.smi.Counter64;
 
-import java.util.Optional;
+import com.google.common.primitives.UnsignedLong;
+import com.oneandone.snmpman.configuration.type.ModifierProperties;
 
 /** This modifier instance modifies {@link Counter64} variables. */
 public class Counter64Modifier implements VariableModifier<Counter64> {
 
     /** The minimum allowed number for the resulting modified variable. */
-    @Getter private UnsignedLong minimum;
+    private UnsignedLong minimum;
 
     /** The maximum allowed number for the resulting modified variable. */
-    @Getter private UnsignedLong maximum;
+    private UnsignedLong maximum;
 
     /** The minimal step by which a variable will be incremented. */
-    @Getter private UnsignedLong minimumStep;
+    private UnsignedLong minimumStep;
 
     /** The maximal step by which a variable will be incremented. */
-    @Getter private UnsignedLong maximumStep;
+    private UnsignedLong maximumStep;
 
     @Override
     public void init(final ModifierProperties properties) {
@@ -43,5 +43,21 @@ public class Counter64Modifier implements VariableModifier<Counter64> {
 
         return new Counter64(newValue.longValue());
     }
+
+	public UnsignedLong getMinimum() {
+		return minimum;
+	}
+
+	public UnsignedLong getMaximum() {
+		return maximum;
+	}
+
+	public UnsignedLong getMinimumStep() {
+		return minimumStep;
+	}
+
+	public UnsignedLong getMaximumStep() {
+		return maximumStep;
+	}
 
 }

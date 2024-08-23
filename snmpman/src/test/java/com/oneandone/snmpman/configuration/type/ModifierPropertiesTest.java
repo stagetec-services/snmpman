@@ -16,7 +16,8 @@ import static org.testng.Assert.*;
 
 public class ModifierPropertiesTest {
 
-    @Test
+    @SuppressWarnings("rawtypes")
+	@Test
     public void testParsing() throws Exception {
         final AgentConfiguration.DeviceFactory deviceFactory = new AgentConfiguration.DeviceFactory();
         final Device device = deviceFactory.getDevice(new File("src/test/resources/configuration/cisco.yaml"));

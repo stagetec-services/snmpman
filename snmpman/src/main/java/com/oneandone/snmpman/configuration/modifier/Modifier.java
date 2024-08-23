@@ -1,14 +1,14 @@
 package com.oneandone.snmpman.configuration.modifier;
 
+import java.lang.reflect.InvocationTargetException;
+
+import org.snmp4j.smi.OID;
+import org.snmp4j.smi.Variable;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.oneandone.snmpman.configuration.type.ModifierProperties;
 import com.oneandone.snmpman.configuration.type.WildcardOID;
 import com.oneandone.snmpman.exception.InitializationException;
-import lombok.Getter;
-import org.snmp4j.smi.OID;
-import org.snmp4j.smi.Variable;
-
-import java.lang.reflect.InvocationTargetException;
 
 /**
  * Representation of a generic modifier.
@@ -27,7 +27,7 @@ public class Modifier<T extends Variable> implements VariableModifier<T> {
      *
      * @return variable modifier.
      */
-    @Getter private final VariableModifier<T> modifier;
+    private final VariableModifier<T> modifier;
 
     /**
      * Constructs a wrapped modifier.
@@ -36,7 +36,7 @@ public class Modifier<T extends Variable> implements VariableModifier<T> {
      * @param modifierClass the class of the modifier
      * @param properties the initialization properties
      */
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public Modifier(@JsonProperty("oid") final String oid,
                     @JsonProperty("class") final String modifierClass,
                     @JsonProperty("properties") final ModifierProperties properties) {
@@ -64,4 +64,8 @@ public class Modifier<T extends Variable> implements VariableModifier<T> {
     public T modify(T variable) {
         return modifier.modify(variable);
     }
+    
+    public VariableModifier<T> getModifier() {
+		return modifier;
+	}
 }

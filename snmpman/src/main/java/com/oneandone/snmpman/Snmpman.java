@@ -1,20 +1,21 @@
 package com.oneandone.snmpman;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import com.google.common.base.Preconditions;
-import com.oneandone.snmpman.configuration.AgentConfiguration;
-import com.oneandone.snmpman.exception.InitializationException;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
-import org.snmp4j.agent.BaseAgent;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.snmp4j.agent.BaseAgent;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.google.common.base.Preconditions;
+import com.oneandone.snmpman.configuration.AgentConfiguration;
+import com.oneandone.snmpman.exception.InitializationException;
 
 /**
  * This is the library interface for Snmpman.
@@ -37,15 +38,16 @@ import java.util.stream.Collectors;
  * <br>
  * The configuration {@code YAML} file defines a list of all agents that should be simulated by the {@code Snmpman}.
  */
-@Slf4j
+@SuppressWarnings("deprecation")
 public final class Snmpman {
+	private static final Logger log = LoggerFactory.getLogger(Snmpman.class);
 
     /**
      * Returns the list of SNMP agents for {@code this} instance.
      *
      * @return the list of SNMP agents
      */
-    @Getter private final List<SnmpmanAgent> agents;
+    private final List<SnmpmanAgent> agents;
 
     /**
      * Constructs an instance by the specified list of agents.
@@ -118,7 +120,7 @@ public final class Snmpman {
      * @param agent the agent to wait for
      * @throws InitializationException if the specified agent is already stopped
      */
-    private void checkStatus(final SnmpmanAgent agent) {
+	private void checkStatus(final SnmpmanAgent agent) {
         if (agent.getAgentState() == BaseAgent.STATE_STOPPED) {
             throw new InitializationException("agent " + agent.getName() + " already stopped while initialization was running");
         } else if (agent.getAgentState() != BaseAgent.STATE_RUNNING) {
@@ -135,4 +137,8 @@ public final class Snmpman {
     public void stop() {
         agents.forEach(SnmpmanAgent::stop);
     }
+
+	public List<SnmpmanAgent> getAgents() {
+		return agents;
+	}
 }

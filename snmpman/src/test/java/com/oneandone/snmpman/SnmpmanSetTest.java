@@ -40,7 +40,7 @@ public class SnmpmanSetTest extends AbstractSnmpmanTest {
     @Test
     public void testSetterForValidValue() throws Exception {
         String newValue = "New interface";
-        ResponseEvent responseEvent = setVariableToOID(new OID(OID_OCTETSTRING).append(OID_ROW_INDEX), new OctetString(newValue));
+        ResponseEvent<?> responseEvent = setVariableToOID(new OID(OID_OCTETSTRING).append(OID_ROW_INDEX), new OctetString(newValue));
         assertEquals(SnmpConstants.SNMP_ERROR_SUCCESS, responseEvent.getResponse().getErrorStatus());
         assertThatOidHasValue(OID_OCTETSTRING, newValue);
     }
@@ -48,15 +48,15 @@ public class SnmpmanSetTest extends AbstractSnmpmanTest {
     @Test
     public void testSetterForInvalidValue() throws Exception {
         Integer newValue = 9999;
-        ResponseEvent responseEvent = setVariableToOID(new OID(OID_OCTETSTRING).append(OID_ROW_INDEX), new Integer32(newValue));
+        ResponseEvent<?> responseEvent = setVariableToOID(new OID(OID_OCTETSTRING).append(OID_ROW_INDEX), new Integer32(newValue));
         assertEquals(SnmpConstants.SNMP_ERROR_INCONSISTENT_VALUE, responseEvent.getResponse().getErrorStatus());
         assertThatOidHasValue(OID_OCTETSTRING, PRIMAL_OCTECT_VALUE);
     }
 
 
-    private ResponseEvent setVariableToOID(OID oid, Variable variable) throws IOException {
+    private ResponseEvent<?> setVariableToOID(OID oid, Variable variable) throws IOException {
 
-        final CommunityTarget target = getCommunityTarget(COMMUNITY, GenericAddress.parse(String.format("127.0.0.1/%d", PORT)));
+        final CommunityTarget<?> target = getCommunityTarget(COMMUNITY, GenericAddress.parse(String.format("127.0.0.1/%d", PORT)));
 
         PDU pdu = new PDU();
         pdu.setType(PDU.SET);

@@ -50,7 +50,8 @@ public abstract class AbstractSnmpmanTest {
         return false;
     }
 
-    public static List<TableEvent> getResponse(final OID query, int port, final String community) throws Exception {
+    @SuppressWarnings("rawtypes")
+	public static List<TableEvent> getResponse(final OID query, int port, final String community) throws Exception {
         final Address targetAddress = GenericAddress.parse(String.format("127.0.0.1/%d", port));
         final Snmp snmp = new Snmp(new DefaultUdpTransportMapping());
         snmp.listen();
@@ -64,7 +65,8 @@ public abstract class AbstractSnmpmanTest {
         return utils.getTable(target, new OID[]{query}, null, null);
     }
 
-    static CommunityTarget getCommunityTarget(String community, Address targetAddress) {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	static CommunityTarget getCommunityTarget(String community, Address targetAddress) {
         final CommunityTarget target = new CommunityTarget();
         target.setCommunity(new OctetString(community));
         target.setAddress(targetAddress);

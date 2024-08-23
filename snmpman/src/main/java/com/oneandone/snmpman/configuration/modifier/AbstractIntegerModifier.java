@@ -1,12 +1,12 @@
 package com.oneandone.snmpman.configuration.modifier;
 
+import java.util.Optional;
+
+import org.snmp4j.smi.UnsignedInteger32;
+
 import com.google.common.base.Preconditions;
 import com.google.common.primitives.UnsignedInteger;
 import com.oneandone.snmpman.configuration.type.ModifierProperties;
-import lombok.Getter;
-import org.snmp4j.smi.UnsignedInteger32;
-
-import java.util.Optional;
 
 /**
  * This modifier has all utility methods to construct for unsigned integer variable modifiers.
@@ -14,16 +14,16 @@ import java.util.Optional;
 abstract class AbstractIntegerModifier<T extends UnsignedInteger32> implements VariableModifier<T> {
 
     /** The minimum allowed number for the resulting modified variable. */
-    @Getter private long minimum;
+    private long minimum;
 
     /** The maximum allowed number for the resulting modified variable. */
-    @Getter private long maximum;
+    private long maximum;
 
     /** The minimal step by which a variable will be incremented. */
-    @Getter private long minimumStep;
+    private long minimumStep;
 
     /** The maximal step by which a variable will be incremented. */
-    @Getter private long maximumStep;
+    private long maximumStep;
 
     @Override
     public void init(final ModifierProperties properties) {
@@ -72,4 +72,20 @@ abstract class AbstractIntegerModifier<T extends UnsignedInteger32> implements V
 
         return cast(newValue);
     }
+
+	public long getMinimum() {
+		return minimum;
+	}
+
+	public long getMaximum() {
+		return maximum;
+	}
+
+	public long getMinimumStep() {
+		return minimumStep;
+	}
+
+	public long getMaximumStep() {
+		return maximumStep;
+	}
 }

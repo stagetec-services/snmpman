@@ -1,20 +1,21 @@
 package com.oneandone.snmpman.configuration;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.oneandone.snmpman.configuration.modifier.Modifier;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.oneandone.snmpman.configuration.modifier.Modifier;
+
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 /**
  * Represents a device type.
  * <br>
  * You can find example configurations within the test resources of this project.
  */
+@SuppressWarnings("rawtypes")
 @ToString(of = "name") @EqualsAndHashCode
 public class Device {
 
@@ -23,7 +24,7 @@ public class Device {
      *
      * @return the device name
      */
-    @Getter private final String name;
+    private final String name;
 
     /**
      * The unmodifiable list of modifier definitions.
@@ -32,14 +33,14 @@ public class Device {
      *
      * @return list of modifier definitions
      */
-    @Getter private final List<Modifier> modifiers;
+	private final List<Modifier> modifiers;
 
     /**
      * The unmodifiable list of vlans.
      *
      * @return list of vlans represented as {@link Long}.
      */
-    @Getter private final List<Long> vlans;
+    private final List<Long> vlans;
 
     /**
      * Constructs a new device type.
@@ -60,4 +61,16 @@ public class Device {
             this.vlans = Collections.emptyList();
         }
     }
+
+	public String getName() {
+		return name;
+	}
+
+	public List<Modifier> getModifiers() {
+		return modifiers;
+	}
+
+	public List<Long> getVlans() {
+		return vlans;
+	}
 }

@@ -1,17 +1,5 @@
 package com.oneandone.snmpman.configuration;
 
-import com.google.common.primitives.UnsignedLong;
-import lombok.extern.slf4j.Slf4j;
-import org.snmp4j.smi.Counter32;
-import org.snmp4j.smi.Counter64;
-import org.snmp4j.smi.Gauge32;
-import org.snmp4j.smi.Integer32;
-import org.snmp4j.smi.IpAddress;
-import org.snmp4j.smi.OID;
-import org.snmp4j.smi.OctetString;
-import org.snmp4j.smi.TimeTicks;
-import org.snmp4j.smi.Variable;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,10 +12,24 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.snmp4j.smi.Counter32;
+import org.snmp4j.smi.Counter64;
+import org.snmp4j.smi.Gauge32;
+import org.snmp4j.smi.Integer32;
+import org.snmp4j.smi.IpAddress;
+import org.snmp4j.smi.OID;
+import org.snmp4j.smi.OctetString;
+import org.snmp4j.smi.TimeTicks;
+import org.snmp4j.smi.Variable;
+
+import com.google.common.primitives.UnsignedLong;
+
 /** Helper class for reading SNMP walks.
  * */
-@Slf4j
 public class Walks {
+	private static final Logger log = LoggerFactory.getLogger(Walks.class);
 
     /**
      * The default charset for files being read.

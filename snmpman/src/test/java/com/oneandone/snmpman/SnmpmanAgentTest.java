@@ -11,7 +11,8 @@ import static org.testng.Assert.assertTrue;
 
 public class SnmpmanAgentTest extends AbstractSnmpmanTest {
 
-    @Test
+    @SuppressWarnings("deprecation")
+	@Test
     public void testSnmpAgentSetupWithCommunityContext() {
         final List<OctetString> contexts = new ArrayList<>();
         final List<SnmpmanAgent> snmpmanAgents = snmpman.getAgents();

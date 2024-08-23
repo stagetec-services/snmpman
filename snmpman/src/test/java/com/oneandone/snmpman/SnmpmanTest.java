@@ -1,19 +1,21 @@
 package com.oneandone.snmpman;
 
-import com.oneandone.snmpman.exception.InitializationException;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.util.Collections;
+import java.util.List;
+
 import org.mockito.Mockito;
 import org.snmp4j.agent.BaseAgent;
 import org.snmp4j.smi.OID;
 import org.snmp4j.util.TableEvent;
 import org.testng.annotations.Test;
 
-import java.util.Collections;
-import java.util.List;
+import com.oneandone.snmpman.exception.InitializationException;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotEquals;
-import static org.testng.Assert.assertTrue;
-
+@SuppressWarnings("deprecation")
 public class SnmpmanTest extends AbstractSnmpmanTest {
 
     @Test
@@ -54,7 +56,7 @@ public class SnmpmanTest extends AbstractSnmpmanTest {
         assertTrue(containsColumn(responses3, oid, "0"));
     }
 
-    @Test(expectedExceptions = InitializationException.class)
+	@Test(expectedExceptions = InitializationException.class)
     public void startWithAlreadyStoppedAgent() {
         final SnmpmanAgent mock = Mockito.mock(SnmpmanAgent.class);
         Mockito.when(mock.getAgentState()).thenReturn(BaseAgent.STATE_STOPPED);
