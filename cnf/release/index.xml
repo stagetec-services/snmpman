@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Release" increment="1724421031391">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="snmpman"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.1" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.oneandone.snmpman.configuration,org.snmp4j.agent,org.snmp4j.agent.mo.snmp,org.snmp4j.security"/>
+      <attribute name="bundle-symbolic-name" value="snmpman"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-393290948,1604918569" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,com.oneandone.snmpman.configuration.modifier,org.snmp4j.smi"/>
+      <attribute name="bundle-symbolic-name" value="snmpman"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.configuration"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1411437132,-209129967,2043677302,83343274" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.fasterxml.jackson.annotation,com.google.common.primitives,com.oneandone.snmpman.configuration.type,org.snmp4j.asn1,org.snmp4j.smi"/>
+      <attribute name="bundle-symbolic-name" value="snmpman"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.configuration.modifier"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1689837971,-2044773731,-677360183,-222369486,-131851631,-660372497,-1915131404,84714629,-550869257,-278641280,-1040610433,-1834532461" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.google.common.primitives,org.snmp4j.smi"/>
+      <attribute name="bundle-symbolic-name" value="snmpman"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.configuration.type"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2049623946,229678448" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="snmpman"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.exception"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1906508655" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.snmp4j.agent,org.snmp4j.agent.request,org.snmp4j.smi"/>
+      <attribute name="bundle-symbolic-name" value="snmpman"/>
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.snmp"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1949086205" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="snmpman"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.1" type="Version"/>
+      <attribute name="osgi.wiring.host" value="snmpman"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="81023" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="snmpman/snmpman-2.2.1.jar"/>
+      <attribute name="osgi.content" value="02363ED66D81CE10E54DFC712B10AE4806D356071B7E9791671C5F2632895BA0"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.annotation)(version&gt;=2.16.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.16.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.16.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.databind"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.dataformat.yaml)(version&gt;=2.16.0)(!(version&gt;=3.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.dataformat.yaml"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=33.0.0)(!(version&gt;=34.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.base"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.primitives)(version&gt;=33.0.0)(!(version&gt;=34.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.primitives"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.oneandone.snmpman.configuration)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.configuration"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.oneandone.snmpman.configuration.modifier)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.configuration.modifier"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.oneandone.snmpman.configuration.type)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.configuration.type"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.oneandone.snmpman.exception)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.exception"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.oneandone.snmpman.snmp)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="com.oneandone.snmpman.snmp"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.reflect)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.reflect"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.net)"/>
+      <attribute name="osgi.wiring.package" value="java.net"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.charset)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.charset"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.concurrent.atomic)"/>
+      <attribute name="osgi.wiring.package" value="java.util.concurrent.atomic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.regex)"/>
+      <attribute name="osgi.wiring.package" value="java.util.regex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.stream)"/>
+      <attribute name="osgi.wiring.package" value="java.util.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.agent)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.agent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.agent.mo)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.agent.mo"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.agent.mo.snmp)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.agent.mo.snmp"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.agent.request)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.agent.request"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.asn1)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.asn1"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.mp)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.mp"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.security)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.smi)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.smi"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.transport)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.transport"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.snmp4j.util)"/>
+      <attribute name="osgi.wiring.package" value="org.snmp4j.util"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=17))"/>
+    </requirement>
+  </resource>
+</repository>
